@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(#fff, #e8e0e6);
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(100, 100, 100);
+}
+
+#viewDiv {
+  height: 80%;
+}
+
+canvas {
+  filter: drop-shadow(10px 10px 10px rgba(199, 171, 205, 0.8));
+}
+
+.banner-title {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1, h2 {
+  color: white;
+  text-transform: uppercase;
+  background-color: rgb(20, 20, 20);
+  padding: 0 5px;
+}
+
+h2 {
+  margin-top: 30px;
+  width: fit-content;
+}
+
+.content {
+  width: min(80%, 600px);
+  margin: 0 auto;
+    font-size: 1.3rem;
+  line-height: 2rem;
+}
+
+table, ul {
+  font-size: 1.1rem;
+}
+
+.date {
+  width: 140px;
+  vertical-align: top;
+  margin-bottom: 10px;
+}
+
+.description {
+  padding-bottom: 20px;
+}
+
+a {
+  color: rgb(20, 20, 20);
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 500ms;
+  border-bottom: 1px solid rgb(20, 20, 20);
+}
+
+a:hover {
+  color: rgb(240, 122, 173);
+  border-color: rgb(240, 122, 173);
+}
+
+footer {
+  background-color: rgba(255,255,255, 0.65);
+  padding: 10px;
+  font-size: 0.8rem;
+}

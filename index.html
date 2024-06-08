@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1" />
+    <title>Creative coding lab Zurich</title>
+    <link
+      rel="stylesheet"
+      href="https://js.arcgis.com/4.30/esri/css/main.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.min.js"></script>
+    <script>
+      var locationPath =
+        location.origin + location.pathname.replace(/\/[^\/]+$/, "");
+      window.dojoConfig = {
+        packages: [
+          {
+            name: "lib",
+            location: locationPath + "/lib",
+          },
+        ],
+      };
+    </script>
+    <script src="https://js.arcgis.com/4.30/"></script>
+    <script src="index.js"></script>
+  </head>
+
+  <body>
+    <div id="viewDiv"></div>
+    <div class="banner-title">
+      <h1>Creative coding lab Zurich</h1>
+    </div>
+    <div class="content">
+      <p class="motto">
+        The creative coding lab is a monthly gathering to create beautiful art
+        with code, visualize data, and learn from each other. The event is free
+        and open to all, regardless of age, origin, gender or experience. It's
+        an opportunity to get creative together in a relaxed and friendly
+        environment. Beginners and first-timers should feel especially welcome!
+      </p>
+
+      <h2>What exactly will we do?</h2>
+
+      <p>
+        We'll meet for about 3 hours and code together. This is a rough
+        schedule:
+      </p>
+      <table>
+        <tbody>
+          <tr>
+            <td class="date">18:00 - 18:30</td>
+            <td class="description">
+              Round of introductions, we present ourselves and what we want to
+              work on. We'll also have a challenge for each meetup. You can work
+              on your project or try to solve the challenge. You can also team
+              up with someone and work on it together.
+            </td>
+          </tr>
+          <tr>
+            <td class="date">18:30 - 20:30</td>
+            <td class="description">
+              We work on our project. Could be anything from a following a
+              tutorial on how to draw lines in SVG, wrangle some data you saw on
+              the Open Data Zurich site, draw a cool shader animation, you name
+              it.
+            </td>
+          </tr>
+          <tr>
+            <td class="date">20:30 - 21:00</td>
+            <td class="description">
+              Presentations: in case someone wants to quickly share something
+              that they learned or show what they did within the 2 hours.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>When and where will we meet?</h2>
+
+      <h2>Resources</h2>
+      <ul>
+        <li>
+          <a
+            target="_blank"
+            href="https://github.com/CreativeCodeBerlin/creative-coding-minilist"
+          >
+            Creative coding minilist</a
+          >
+        </li>
+        <li>
+          <a target="_blank" href="https://thebookofshaders.com/"
+            >The Book of Shaders</a
+          >
+        </li>
+        <li>
+          <a target="_blank" href="https://mitpress.mit.edu/9780262542043/"
+            >Code as a creative medium</a
+          >
+        </li>
+        <li>
+          <a target="_blank" href="http://www.generative-gestaltung.de/2/"
+            >Generative design</a
+          >
+        </li>
+        <li>
+          <a target="_blank" href="https://natureofcode.com/">Nature of code</a>
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://github.com/terkelg/awesome-creative-coding"
+            >Awesome creative coding repository</a
+          >
+        </li>
+      </ul>
+    </div>
+    <footer>
+      The map is made with
+      <a href="https://developers.arcgis.com/javascript/" target="_blank"
+        >ArcGIS Maps SDK for JavaScript</a
+      >. Generalized data from
+      <a href="http://www.projectlinework.org/">Project Linework</a>, 1981
+      style.
+    </footer>
+  </body>
+</html>
