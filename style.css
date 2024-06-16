@@ -46,9 +46,15 @@ h1 {
 }
 
 h2 {
-  margin-top: 30px;
+  margin-top: 50px;
   width: fit-content;
   font-size: 1.3rem;
+}
+
+h1 > span {
+  display: block;
+  font-size: 1.2rem;
+  padding: 5px;
 }
 
 .content {
@@ -71,6 +77,10 @@ ul {
 
 .description {
   padding-bottom: 20px;
+}
+
+.location-image {
+  max-width: 300px;
 }
 
 a {
