@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 html,
 body {
@@ -13,12 +13,12 @@ body {
   color: rgb(100, 100, 100);
 }
 
-#viewDiv {
+.banner-image {
   height: 80%;
-}
-
-canvas {
   filter: drop-shadow(10px 10px 10px rgba(199, 171, 205, 0.8));
+  background-image: url("header.png");
+  background-size: cover;
+  background-position: center center;
 }
 
 .banner-title {
@@ -32,26 +32,34 @@ canvas {
   align-items: center;
 }
 
-h1, h2 {
+h1,
+h2 {
   color: white;
   text-transform: uppercase;
   background-color: rgb(20, 20, 20);
   padding: 0 5px;
 }
 
+h1 {
+  max-width: 80%;
+  text-align: center;
+}
+
 h2 {
   margin-top: 30px;
   width: fit-content;
+  font-size: 1.3rem;
 }
 
 .content {
   width: min(80%, 600px);
   margin: 0 auto;
-    font-size: 1.3rem;
+  font-size: 1.3rem;
   line-height: 2rem;
 }
 
-table, ul {
+table,
+ul {
   font-size: 1.1rem;
 }
 
@@ -79,7 +87,7 @@ a:hover {
 }
 
 footer {
-  background-color: rgba(255,255,255, 0.65);
+  background-color: rgba(255, 255, 255, 0.65);
   padding: 10px;
   font-size: 0.8rem;
 }
